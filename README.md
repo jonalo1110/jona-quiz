@@ -6,3 +6,4 @@ This project showcases fundamentals of Flutter development including state manag
 - Tracks user answers and displays results at the end.
 - Simple, clean UI using Flutter widgets and Google Fonts.
 - Ready for integration with APIs or databases.
+| ![Home](assets/home.png) | ![Quiz](assets/questions.png) | ![Results](assets/results.png) |
