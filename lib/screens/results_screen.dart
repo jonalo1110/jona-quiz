@@ -42,15 +42,44 @@ class ResultsScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'You Scored: $numCorrectQuestions out of $numTotalQuestions',
-              style: GoogleFonts.lato(
-                fontSize: 18,
-                color: Color.fromARGB(255, 162, 162, 195),
-                fontWeight: FontWeight.bold,
+            Text.rich(
+              TextSpan(
+                text: 'You Scored: ',
+                style: GoogleFonts.lato(
+                  fontSize: 18,
+                  color: const Color.fromARGB(255, 194, 194, 218),
+                  fontWeight: FontWeight.bold,
+                ),
+                children: [
+                  TextSpan(
+                    text: '$numCorrectQuestions',
+                    style: GoogleFonts.lato(
+                      fontSize: 24,
+                      color: const Color.fromARGB(255, 9, 19, 88),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  TextSpan(
+                    text: ' out of ',
+                    style: GoogleFonts.lato(
+                      fontSize: 18,
+                      color: const Color.fromARGB(255, 9, 19, 88),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  TextSpan(
+                    text: '$numTotalQuestions',
+                    style: GoogleFonts.lato(
+                      fontSize: 24,
+                      color: Color.fromARGB(255, 9, 19, 88),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
               textAlign: TextAlign.center,
             ),
+
             const SizedBox(height: 30),
             QuestionsSummary(summaryData),
             const SizedBox(height: 30),
