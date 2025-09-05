@@ -8,10 +8,9 @@ class ApiService {
     if (kIsWeb) return 'http://localhost:3000/api';
     try {
       if (Platform.isAndroid) {
-        // Android emulator uses 10.0.2.2 to reach host machine
         return 'http://10.0.2.2:3000/api';
       }
-      // iOS simulator / desktop
+
       return 'http://localhost:3000/api';
     } catch (_) {
       return 'http://localhost:3000/api';
