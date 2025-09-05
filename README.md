@@ -7,4 +7,4 @@ This project showcases fundamentals of Flutter development including state manag
 - Simple, clean UI using Flutter widgets and Google Fonts.
 - Ready for integration with APIs or databases.
 | ![Home](assets/home.png) | ![Quiz](assets/questions.png) | ![Results](assets/results.png) |
-<img src="assets/home.png" alt="Home" width="250"/>
+<img src="assets/home.png" alt="Home" width="250"/> | <img src="assets/questions.png" alt="Questions" width="250"/> | <img src="assets/results.png" alt="Results" width="250"/>
