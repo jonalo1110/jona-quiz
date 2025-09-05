@@ -8,7 +8,7 @@ class StartScreen extends StatefulWidget {
   final VoidCallback startQuiz;
 
   @override
-  State<StartScreen> createState() => _StartScreenState();
+  State<StartScreen> createState() => _StartScreenState(); 
 }
 
 class _StartScreenState extends State<StartScreen> {
@@ -32,7 +32,7 @@ class _StartScreenState extends State<StartScreen> {
     print(name);
 
     try {
-      await ApiService.sendName(name); 
+      await ApiService.sendName(name);
     } catch (e) {
       print('sendName error: $e');
     }
@@ -41,7 +41,7 @@ class _StartScreenState extends State<StartScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: () => FocusScope.of(context).unfocus(),
